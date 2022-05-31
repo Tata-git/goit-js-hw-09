@@ -1,2 +1,0 @@
-var refs={startBtn:document.querySelector("data-start")},intervalId=null,options={enableTime:!0,time_24hr:!0,defaultDate:new Date,minuteIncrement:1,onClose:function(e){console.log(e[0])}};function convertMs(e){var o=6e4,t=36e5,n=24*t;return{days:Math.floor(e/n),hours:Math.floor(e%n/t),minutes:Math.floor(e%n%t/o),seconds:Math.floor(e%n%t%o/1e3)}}console.log(convertMs(2e3)),console.log(convertMs(14e4)),console.log(convertMs(2414e4));
-//# sourceMappingURL=02-timer.5efa2530.js.map
