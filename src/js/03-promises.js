@@ -15,7 +15,7 @@ function submitForm(evt) {
   const delayStepValue = +refs.form.step.value;
   const amountValue = +refs.form.amount.value;
 
-  for (let position = 0; position <= amountValue; position += 1) {
+  for (let position = 1; position <= amountValue; position += 1) {
     firstDelayValue += delayStepValue;
 
     createPromise(position, firstDelayValue)
