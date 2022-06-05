@@ -9,6 +9,7 @@ const refs = {
   hours: document.querySelector('[data-hours]'),
   minutes: document.querySelector('[data-minutes]'),
   seconds: document.querySelector('[data-seconds]'),
+  dateTimePicker: document.querySelector('#datetime-picker'),
 };
 
 let intervalId = null;
@@ -36,6 +37,7 @@ const options = {
 
     function timeReference() {
       refs.startBtn.disabled = true;
+      refs.dateTimePicker.disabled = true;
 
       intervalId = setInterval(() => {
         const currentTime = Date.now();
